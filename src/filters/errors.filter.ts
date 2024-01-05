@@ -7,7 +7,6 @@ import {
 import { BaseExceptionFilter } from '@nestjs/core';
 import { UniqueViolationError } from 'objection';
 
-//  https://stackoverflow.com/questions/66777587/how-to-handling-error-on-objectionjs-with-nestjs-exception-filters
 @Catch()
 export class ErrorsFilter extends BaseExceptionFilter {
   catch(exception: InternalServerErrorException, host: ArgumentsHost) {
